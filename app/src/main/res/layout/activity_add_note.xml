@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAED7D"
+    android:padding="20dp"
+    tools:context=".AddNoteActivity">
+
+    <ImageView
+        android:id="@+id/notestitle"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:translationX="5dp"
+        app:srcCompat="@drawable/titleimg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:translationX="250dp"
+        android:translationY="-50dp"
+        app:srcCompat="@drawable/noteimg" />
+
+    <TextView
+        android:id="@+id/titletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:text="메모 작성"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationX="235dp"
+        android:translationY="-40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_margin="5dp"
+        android:translationY="-40dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleinput"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_margin="10dp"
+            android:background="#B2EBF4"
+            android:hint="제목"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/descriptioninput"
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:layout_margin="10dp"
+            android:background="#B2EBF4"
+            android:gravity="top"
+            android:hint="내용"
+            android:lines="10"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/savebtn"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/savebtn" />
+
+
+</LinearLayout>
